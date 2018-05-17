@@ -27,7 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss",
+              "./node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js"
