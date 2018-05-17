@@ -1,4 +1,5 @@
 import { AppPage } from './app.po';
+import { browser } from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -9,6 +10,13 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    // browser.sleep( 10000 );
+    expect(page.getParagraphText()).toEqual('Welcome to in!');
+  });
+
+  it('should input saban', () => {
+    page.getInput().sendKeys( 'saban' );
+    browser.sleep( 5000 );
+    expect(page.getInputValue()).toEqual('saban');
   });
 });
