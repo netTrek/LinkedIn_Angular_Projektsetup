@@ -22,12 +22,6 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/LinkedIn",
-            "baseHref" : "/netTrek/",
-            "verbose": true,
-            "deleteOutputPath": false,
-            "progress" : false,
-            "aot" : true,
-            "showCircularDependencies" : false,
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,15 +62,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "LinkedIn:build",
-            "port" : 4444,
-            "progress" : true,
-            "aot" : true,
-            "host" : "0.0.0.0",
-            "ssl" : true,
-            "sslKey" : "ssl/server.key",
-            "sslCert" : "ssl/server.cert",
-            "open" : true
+            "browserTarget": "LinkedIn:build"
           },
           "configurations": {
             "production": {

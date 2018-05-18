@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import * as CryptoJS from 'crypto-js';
 
 @Component({
   selector: 'in-root',
@@ -9,6 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'in';
   constructor () {
+
     // $('body').css('backgroundColor', 'red');
+
+    const hash = CryptoJS.MD5( 'hello world').toString();
+    console.log ( hash );
+
   }
 }
