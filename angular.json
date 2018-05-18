@@ -31,6 +31,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+              },
               "src/styles.scss",
               "./node_modules/@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss",
               "./node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss"
@@ -84,6 +87,9 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
+              {
+                "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+              },
               "src/styles.scss"
             ],
             "scripts": [],
