@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserLoginService } from './user/user-login.service';
 
 @Component({
   selector: 'in-root',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'in';
-  constructor () {
+  constructor ( userLogin: UserLoginService ) {
+    console.log ( userLogin );
   }
 }
