@@ -48,6 +48,12 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "de": {
+              "aot": true,
+              "outputPath": "dist/LinkedIn/de",
+              "i18nFile":"src/locales/messages.xlf",
+              "i18nLocale":"de"
             }
           }
         },
@@ -59,6 +65,9 @@
           "configurations": {
             "production": {
               "browserTarget": "LinkedIn:build:production"
+            },
+            "de": {
+              "browserTarget": "LinkedIn:build:de"
             }
           }
         },

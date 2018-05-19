@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file datatype="plaintext" target-language="de" original="ng2.template" source-language="en">
+        <body>
+            <trans-unit datatype="html" id="SiteHeader">
+                <source>Car</source>
+                <target>Auto</target>
+                <note from="description" priority="1">Beschreibung zum header|</note>
+                <note from="meaning" priority="1">Überschrift auf Startseite</note>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/app.component.ts</context>
+                    <context context-type="linenumber">9</context>
+                </context-group>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
