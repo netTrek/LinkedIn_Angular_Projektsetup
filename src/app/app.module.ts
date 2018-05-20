@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserModule } from './user/user.module';
 import { ProductComponent } from './products/product/product.component';
+import { NetTrekLibModule } from '../../projects/net-trek-lib/src/lib/net-trek-lib.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductComponent } from './products/product/product.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UserModule
+    UserModule,
+    NetTrekLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]

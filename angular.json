@@ -243,6 +243,46 @@
           }
         }
       }
+    },
+    "netTrek-lib": {
+      "root": "projects/net-trek-lib",
+      "sourceRoot": "projects/net-trek-lib/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/net-trek-lib/tsconfig.lib.json",
+            "project": "projects/net-trek-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/net-trek-lib/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/net-trek-lib/src/test.ts",
+            "tsConfig": "projects/net-trek-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/net-trek-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/net-trek-lib/tsconfig.lib.json",
+              "projects/net-trek-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "LinkedIn"
